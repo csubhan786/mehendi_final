@@ -1,11 +1,7 @@
 "use client";
 import GradientButton from "./components/button";
-//import { useState } from "react";
-//import GradientButton from "./components/button";
-//import Lightbox from "react-image-lightbox";
-//import "react-image-lightbox/style.css";
-import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+
 export default function HomePage() {
   return (
     <>
@@ -18,6 +14,7 @@ export default function HomePage() {
           padding: 0;
           overflow-x: hidden;
         }
+
         .hero-section {
           text-align: center;
           padding: 100px 20px;
@@ -25,6 +22,7 @@ export default function HomePage() {
           z-index: 1;
           overflow: hidden;
         }
+
         .hero-image {
           max-height: 400px;
           width: 86%;
@@ -35,14 +33,17 @@ export default function HomePage() {
           animation: parallax 20s infinite linear;
           transition: transform 0.3s ease;
         }
+
         .hero-image:hover {
           transform: scale(1.15);
         }
+
         @keyframes parallax {
           0% { transform: scale(1.1) translateY(0); }
           50% { transform: scale(1.1) translateY(10px); }
           100% { transform: scale(1.1) translateY(0); }
         }
+
         .hero-title,
         .about-section h2,
         .services-section h2,
@@ -50,6 +51,7 @@ export default function HomePage() {
         .cta-section h2 {
           color: #f7c400;
         }
+
         .hero-title {
           font-size: 3.8rem;
           font-weight: 700;
@@ -57,9 +59,11 @@ export default function HomePage() {
           margin-top: 30px;
           transition: color 0.3s ease;
         }
+
         .hero-title:hover {
           color: #ffcc00;
         }
+
         .hero-subtitle {
           font-size: 1.4rem;
           color: #cfcfcf;
@@ -67,6 +71,7 @@ export default function HomePage() {
           letter-spacing: 1px;
           font-weight: 300;
         }
+
         .about-section {
           padding: 60px 20px;
           text-align: center;
@@ -76,10 +81,12 @@ export default function HomePage() {
           max-width: 900px;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
+
         .services-section {
           padding: 80px 20px;
           text-align: center;
         }
+
         .service-card {
           background: rgba(255, 255, 255, 0.1);
           border-radius: 15px;
@@ -91,11 +98,13 @@ export default function HomePage() {
           margin-bottom: 30px;
           box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         }
+
         .service-card:hover {
           transform: scale(1.05);
           box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
           background: linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
         }
+
         .service-image-container {
           width: 100%;
           height: 200px;
@@ -103,6 +112,7 @@ export default function HomePage() {
           border-radius: 15px;
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+
         .service-image {
           width: 100%;
           height: 100%;
@@ -110,13 +120,16 @@ export default function HomePage() {
           border-radius: 15px;
           transition: transform 0.3s ease;
         }
+
         .service-image:hover {
           transform: scale(1.1);
         }
+
         .service-content {
           margin-top: 15px;
           padding: 15px;
         }
+
         .testimonials-section {
           padding: 60px 20px;
           text-align: center;
@@ -125,16 +138,19 @@ export default function HomePage() {
           border-radius: 15px;
           max-width: 900px;
         }
+
         .testimonial {
           margin: 30px 0;
           font-style: italic;
           font-size: 1.2rem;
           line-height: 1.5;
         }
+
         .testimonial h5 {
           margin-top: 15px;
           font-weight: 700;
         }
+
         .cta-section {
           text-align: center;
           padding: 80px 20px;
@@ -143,12 +159,13 @@ export default function HomePage() {
           margin: 30px auto;
           max-width: 900px;
         }
+
         .cta-section h2 {
           font-size: 2.5rem;
           font-weight: 700;
           margin-bottom: 20px;
-          color: #f7c400;
         }
+
         @media (max-width: 767px) {
           .hero-title {
             font-size: 2.5rem;
@@ -163,79 +180,60 @@ export default function HomePage() {
             font-size: 2rem;
           }
         }
-          .gallery-section {
-  margin-top: 40px;
-}
 
-.gallery-image-wrapper {
-  border: 4px solid #ffd700; /* golden */
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.2);
-}
+        .gallery-section {
+          margin-top: 40px;
+        }
 
-.gallery-image-wrapper:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
-}
+        .gallery-image-wrapper {
+          border: 4px solid #ffd700;
+          border-radius: 12px;
+          overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          box-shadow: 0 6px 20px rgba(255, 215, 0, 0.2);
+        }
 
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+        .gallery-image-wrapper:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+        }
 
+        .gallery-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       `}</style>
 
+      {/* HERO */}
       <header className="hero-section">
         <div className="container text-center">
-          <img
-            src="/images/home_page.jpg"
-            alt="Beautiful Mehendi Art Display"
-            className="hero-image"
-          />
+          <img src="/images/home_page.jpg" alt="Beautiful Mehendi Art" className="hero-image" />
           <h1 className="hero-title">Beautiful Mehendi Art</h1>
-          <p className="hero-subtitle">
-            Elegant and intricate Mehendi designs for every occasion.
-          </p>
-          <GradientButton
-            text="Call Now"
-            onClick={() => alert("Button clicked!")}
-          />
+          <p className="hero-subtitle">Elegant and intricate Mehendi designs for every occasion.</p>
+          <GradientButton text="Call Now" onClick={() => alert("Button clicked!")} />
         </div>
       </header>
+
+      {/* GALLERY */}
       <div className="gallery-section container mt-5">
-  <h2 style={{ color: "#f7c400", marginBottom: "30px" }}>Mehendi Gallery</h2>
-  <div className="row">
-    {[
-      "/images/home/gallary1.jpg",
-      "/images/home/gallary2.jpg",
-      "/images/home/gallary3.jpg",
-      "/images/home/gallary4.jpg",
-      "/images/home/gallary5.jpg",
-      "/images/home/gallary6.jpg",
-      "/images/home/gallary7.jpg",
-      "/images/home/gallary8.jpg",
-      "/images/home/gallary9.jpg",
-      "/images/home/gallary10.jpg",
-      "/images/home/gallary11.jpg",
-      "/images/home/gallary12.jpg",
-      "/images/home/gallary13.jpg",
-      "/images/home/gallary14.jpg",
-      "/images/home/gallary15.jpg",
-      "/images/home/gallary16.jpg",
-    ].map((src, index) => (
-      <div key={index} className="col-6 col-md-3 mb-4">
-        <div className="gallery-image-wrapper">
-          <img src={src} alt={`Mehendi Design ${index + 1}`} className="gallery-image" />
+        <h2 style={{ color: "#f7c400", marginBottom: "30px" }}>Mehendi Gallery</h2>
+        <div className="row">
+          {Array.from({ length: 16 }).map((_, i) => (
+            <div key={i} className="col-6 col-md-3 mb-4">
+              <div className="gallery-image-wrapper">
+                <img
+                  src={`/images/home/gallary${i + 1}.jpg`}
+                  alt={`Mehendi Design ${i + 1}`}
+                  className="gallery-image"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
 
-
+      {/* ABOUT US */}
       <section className="about-section">
         <div className="container text-center">
           <h2>About Us</h2>
@@ -247,6 +245,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* WHY CHOOSE US */}
       <section className="about-section">
         <div className="container text-center">
           <h2>Why Choose Us</h2>
@@ -259,38 +258,37 @@ export default function HomePage() {
             <li>Mehendi is our tradition – part of the total beauty of a bride. No woman feels complete without it.</li>
             <li><strong>Home service available</strong> for your comfort and convenience.</li>
             <li><strong>100% colour guaranteed</strong> with long-lasting results.</li>
-            <li><strong>24/7  service</strong> – We’re always here for your special moments.</li>
+            <li><strong>24/7 service</strong> – We’re always here for your special moments.</li>
           </ul>
         </div>
       </section>
 
-      <section id="services" className="services-section">
+      {/* SERVICES */}
+      <section className="services-section">
         <div className="container text-center">
           <h2>Our Services</h2>
           <div className="row mt-4">
-            {[{
-              title: "Bridal Mehendi",
-              image: "/images/bridaldow.jpg",
-              desc: "Exquisite bridal designs to make your special day memorable.",
-            },
-            {
-              title: "Festival Mehendi",
-              image: "/images/festival_home.jpg",
-              desc: "Celebrate festivals with beautiful and traditional Mehendi art.",
-            },
-            {
-              title: "Custom Designs",
-              image: "/images/custom.jpg",
-              desc: "Get personalized Mehendi patterns as per your choice.",
-            }].map((item, index) => (
-              <div key={index} className="col-md-4">
+            {[
+              {
+                title: "Bridal Mehendi",
+                image: "/images/bridaldow.jpg",
+                desc: "Exquisite bridal designs to make your special day memorable.",
+              },
+              {
+                title: "Festival Mehendi",
+                image: "/images/festival_home.jpg",
+                desc: "Celebrate festivals with beautiful and traditional Mehendi art.",
+              },
+              {
+                title: "Custom Designs",
+                image: "/images/custom.jpg",
+                desc: "Get personalized Mehendi patterns as per your choice.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="col-md-4">
                 <div className="service-card">
                   <div className="service-image-container">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="service-image"
-                    />
+                    <img src={item.image} alt={item.title} className="service-image" />
                   </div>
                   <div className="service-content">
                     <h4>{item.title}</h4>
@@ -303,9 +301,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* TESTIMONIALS */}
       <section className="testimonials-section">
         <div className="container text-center">
-          <h2>Clients Review </h2>
+          <h2>Clients Review</h2>
           <div className="testimonial">
             <p>"Absolutely loved my bridal Mehendi! The designs were perfect and detailed."</p>
             <h5>- Ayesha Khan</h5>
@@ -317,9 +316,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CALL TO ACTION */}
       <section className="cta-section">
         <div className="container text-center">
-          <h2>Let's Make Your Occasion Beautiful  </h2>
+          <h2>Let's Make Your Occasion Beautiful</h2>
           <a
             href="https://wa.me/919158844821"
             target="_blank"
