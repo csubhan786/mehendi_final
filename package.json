@@ -5,22 +5,25 @@
   "scripts": {
     "dev": "\"npm run dev:frontend\"",
     "dev:frontend": "next dev",
-   
     "dev:bot": "cd ../mehendi-backend && python -m app.bot",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "axios": "^1.9.0",
     "bootstrap": "^5.3.6",
     "concurrently": "^9.1.2",
     "cors": "^2.8.5",
     "next": "15.3.2",
     "nodemon": "^3.1.10",
-    "react-bootstrap": "^2.10.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.2.0",
+    "react-image-lightbox": "^5.1.4",
+    "sweetalert2": "^11.22.0",
+    "sweetalert2-react-content": "^5.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
