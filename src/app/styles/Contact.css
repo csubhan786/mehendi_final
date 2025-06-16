@@ -1,0 +1,50 @@
+.contact-section {
+    padding: 80px 0;
+    background-color: #002a20;
+    color: #f0f0f0;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ff9900;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffcc33;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section .form-control {
+    background-color: #003322;
+    border: 1px solid #666;
+    color: #fff;
+  }
+  
+  .contact-section .form-control:focus {
+    border-color: #ff9900;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.7);
+  }
+  
+  .contact-section .btn {
+    background-color: #ff9900;
+    color: #000;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section .btn:hover {
+    background-color: #ffaa33;
+  }
+  .contact-section ::placeholder {
+    color: #cccccc; /* Light gray, visible on dark background */
+    opacity: 1; /* Make sure it’s fully opaque */
+  }
+  

@@ -1,0 +1,41 @@
+.about-section {
+    padding: 80px 20px;
+    background: linear-gradient(145deg, #00291c, #003f2d);
+    color: #fff;
+  }
+  
+  .about-section h2 {
+    font-size: 2.8rem;
+    color: #ff9900;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .about-section h3 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .about-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-section ul li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .about-section ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ffcc00;
+  }
+  
