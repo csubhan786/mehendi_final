@@ -3,7 +3,9 @@ import GradientButton from "./components/button";
 //import { useState } from "react";
 //import GradientButton from "./components/button";
 //import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+//import "react-image-lightbox/style.css";
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 export default function HomePage() {
   return (
     <>
